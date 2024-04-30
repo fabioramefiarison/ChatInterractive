@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/Main.css">
+    <script src="../SCRIPT/Jquerry/JquerryUncompressed-3.7.1.js"></script>
+    <script src="../SCRIPT/nav.js"></script>
+    <title>Document</title>
+</head>
+<body>
+      <!-------------------------- Partie TOKY ---------------------------->
+    <div id="navbar">
+
+
+        <img src="../IMAGES/b-logo-zip-file/png/logo-no-background.png" alt="logo" id="logo">
+         <span id="option-frst">
+            <img src="../ICÔNES/TOKY/page-daccueil.png" alt="home" id="nav-icon">
+            <a href="Main.html">
+            <span id="option-option">
+                Accueil
+            </span></a>
+
+            
+           
+            <img src="../ICÔNES/TOKY/livre-de-contact.png" alt="Contact" id="nav-icon">
+            <a href="#"> Contact</a>
+            
+            <img src="../ICÔNES/TOKY/menu.png" alt="home" id="nav-icon">
+            <a href="#">Menu</a>
+
+         </span>
+         <span id="nav-bar-option-scnd">
+            <span id="toggle">
+                <i class="indicator"><img src="../ICÔNES/TOKY/lunes .png" alt="lune" id="mode"></i>
+            </span>
+            <img src="../ICÔNES/TOKY/telephone.png" alt="telephone" id="nav-icon">
+            <img src="../ICÔNES/TOKY/bell.png" alt="cloche" id="nav-icon">
+        </span>    
+         
+    
+
+        
+
+
+
+
+    </div>
+    <div id="center" >
+        <!-------------------------- Partie MIARINTSOA ---------------------------->
+        <div style="background-color: aquamarine;">
+            <p>Miarintsoa</p>
+        </div>
+          <!-------------------------- Partie FABIO ---------------------------->
+          <div id="conversation">
+            <div id="recherche">
+                <form id="rchrch">
+                    <input type="text" name="search" placeholder="Search..">
+                </form>
+
+             <div id="msg-nonlu">
+                  <div id="non-lu">non lu</div>
+                  <div id="option-non-lu">^</div>
+             </div>
+
+             <div id="utilisateur-non-lu">
+                 <div id="person1">
+                     <img src="./../ICÔNES/TOJO/profil.png" alt="photo de profil" >
+                     <div class="nom-tel">
+                         <span id="nomPrenom"><STrong>Crush</STrong></span><span id="heure-msg_non_lu">18:08</span><br>
+                         <span id="telephone">033 23 333 33</span><br>
+                         <span id="msg-nonlu-perso">je pense que je t'aime?</span>
+                     </div>
+                  </div>
+              <div id="person1">
+                     <img src="./../ICÔNES/TOJO/profil.png" alt="photo de profil" >
+                     <div class="nom-tel">
+                         <span id="nomPrenom"><strong>2 ème bureau</strong></span><span id="heure-msg_non_lu">17h</span><br>
+                         <span id="telephone">033 33 333 33</span><br>
+                         <span id="msg-nonlu-perso">fa iza foana zn crushnao zn?</span>
+                     </div>
+              </div>
+              
+             </div>
+          </div>
+
+         <div id="messages">
+            <main>
+                <div class="navBar">
+                      <span id="nommail">
+                      <?=$_SESSION['user']; ?>
+                   </span>
+                   <span class="btn btn-danger deconnexion">
+                   <a >déconnexion</a>
+                   </span>
+                </div>
+                <div id="discution">
+                <!--<h2 id="mp-vide">Chargement<h2>-->
+                </div>
+
+                      <h2 id="mp-vide">Message vide..<h2>
+
+                             <div id="vous">
+                                <h4 style="color: aqua;">Vous</h4>
+                                <p id="message" ></p>
+                                <p><i id="date-Heure"></i></p>
+                             </div><br>
+                    
+                         <div id="autre"style="margin-right:1vw">
+                            <h4 id="h4"> </h4>
+                            <p id="message"style="letter-spacing: 3px;font-size: 1vw;v"><?=$row['Message']?></p>
+                            <p><i id="date-Heure"></i></p>
+                        </div>
+            
+                   <div class="Envoyertext">
+                    <form action="" method="post">
+                      <input type="text" id="inputMessage" placeholder="Votre message.." name="message" >
+                      <span class="bouttonvoye">
+                    <input type="submit" id="Envoyertext" name="boutonnes" value="envoyer" style="margin-top: 10px !important;">
+                    </span>
+                      </form>
+                   <!---carré-->
+                   <div class="car carre1"></div>
+                   <div class="car carre2"></div>
+                   <div class="car carre3"></div>
+                   <div class="car carre4"></div>
+                
+           </main>
+         </div>
+ </div>
+
+
+
+
+
+
+
+          <!-------------------------- Partie TOJO ---------------------------->
+<div class="user">
+    
+                <div class="card">
+                    <img src="../ICÔNES/TOJO/profil.png" class="us">
+                    <h2>Tojo Ny Aina</h2>
+                    <p>+261 34 74 319 09<br>I'm a Student at ISPM</p>
+                    <div class="fonct">
+                        <img src="../ICÔNES/TOJO/appel.png" >
+                        <img src="../ICÔNES/TOJO/appel-video.png">
+                    </div>
+
+                </div>
+                <div class="lien">
+                    <a href=""><img src="../ICÔNES/HARITIANA/facebook(2).png"><h2>Facebook</h2></a>
+                    <a href=""><img src="../ICÔNES/HARITIANA/instagram(3).png"><h2>Instagram</h2></a>
+                    <a href=""><img src="../ICÔNES/HARITIANA/twitter(1).png"><h2>Twitter</h2></a>
+                </div>
+</div>
+
+<!----------partie Haritiana---------->
+
+        
+</body>
+</html>
